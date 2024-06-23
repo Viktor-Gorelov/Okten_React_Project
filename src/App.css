@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+
+html[data-theme = 'light']{
+  --background-color: #f0eefd;
+  --background-color-header: #c0f6a5;
+  --background-color-movie: rgba(98, 190, 130, 0.82);
+  --color: #070707;
+  --badge-color: rgba(98, 190, 130, 0.82);
+}
+
+html[data-theme = 'dark']{
+  --background-color: #000000;
+  --background-color-header: #333232;
+  --background-color-movie: rgba(178, 181, 227, 0.16);
+  --color: #f1f2f5;
+  --badge-color: rgba(178, 181, 227, 0.16);
+}
+.header{
+  background-color: var(--background-color-header);
+  color: var(--color);
+  transition: background-color 200ms linear;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.header_text{
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color);
+}
+.header a{
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color);
+}
+.theme_switcher{
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allMovies{
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+}
+.pagination{
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-around;
+}
+.pButton{
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  background-color: var(--background-color-header);
+  border: 1px solid var(--background-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+  align-items: center;
+  color: var(--color);
+}
+.cardMovie{
+  background-color: var(--background-color-movie);
+  color: var(--color);
+  border: 1px solid var(--background-color-movie);
+  border-radius: 25px;
+  transition: background-color 400ms linear;
+  width: 280px;
+  height: 400px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.cardMovie a{
+  text-decoration: none;
+  color: var(--color);
+}
+.detailMovie{
+  background-color: var(--background-color-movie);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+}
+.detailMovieInfo{
+  color: var(--color);
+  transition: background-color 400ms linear;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.movieInfo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+.movieInfo h5{
+  margin-top: 5px;
+}
+.info{
+  display: flex;
+}
+.genreBadge{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  color:var(--badge-color);
+}
+.page{
+  min-height: 88.1vh;
+  background-color: var(--background-color);
+}
+.allGenres{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cardGenre{
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.genreButton{
+  background-color: var(--background-color-header);
+  color: var(--color);
+  border-radius: 20px;
+  width: 9vw;
+  height: 4vw;
+}
